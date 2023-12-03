@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_weather
+  - intent: city
+  - action: action_weather
+  - intent: city
+  - action: action_weather
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_weather
+  - intent: city
+  - action: action_weather
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: city
+  - action: action_weather
+  - intent: goodbye
+  - action: utter_goodbye

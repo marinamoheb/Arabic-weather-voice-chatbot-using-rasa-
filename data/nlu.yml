@@ -1,0 +1,47 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - هاى
+    - مرحبا
+    - السلام عليكم
+    - هلا
+    - سلام عليكم
+    - صباح الخير
+    - hi
+
+
+- intent: goodbye
+  examples: |
+    - مع السلامة
+    - باي
+    - bye
+   
+
+- intent: weather
+  examples: |
+    - كيف الطقس اليوم
+    - كيف الجو
+    - اية اخيار جو
+    - ايه اخبار الجو
+    - ايه اخبار الطقس
+    - ما هو الطقس اليوم
+    - ما هو الجو اليوم
+    - what is the weather today 
+- intent: city
+  examples: |
+    - مصر
+    - سوريا
+    - لبنان
+    - دبي
+    - باريس
+
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
